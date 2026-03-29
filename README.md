@@ -1,8 +1,5 @@
-## Hi there 👋
-
-<!--
-**Harigovind777/Harigovind777** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-# 👋 Hi, I'm Harigovind R
+Harigovind777
+ # 👋 Hi, I'm Harigovind R
 
 🎓 B.Tech AI/ML Student (S6)
 🏫 Chinmaya Vishwa Vidyapeeth
@@ -80,4 +77,3 @@
 ---
 
 ⭐️ From Harigovind R
-
