@@ -9,6 +9,11 @@ AVENIR="/System/Library/Fonts/Avenir Next.ttc"
 MENLO ="/System/Library/Fonts/Menlo.ttc"
 SPECS=[("gyroid_p35","0.35"),("gyroid_p60","0.60"),("gyroid_p85","0.85")]
 
+EYEBROW = "B.TECH · AI/ML"
+NAME    = "HARIGOVIND R"
+TAGLINE = "Physics-informed ML for bone tissue engineering"
+EMAIL   = "hg155158@gmail.com"
+
 def parse(fn):
     s=open(f"{FIG}/{fn}.svg").read(); out=[]
     for d in re.findall(r'<path d="([^"]+)"',s):
@@ -24,7 +29,7 @@ def track(d,xy,t,f,fill,tr=0):
     for ch in t: d.text((x,y),ch,font=f,fill=fill); x+=d.textlength(ch,font=f)+tr
 def twid(d,t,f,tr=0): return sum(d.textlength(c,font=f)+tr for c in t)-tr
 
-def build(W,H,*,name_px,cell,gap,pad,x0,y_base,y_cell_top,eyebrow_px,tag_px,lab_px):
+def build(W,H,*,name_px,cell,gap,pad,x0,y_base,y_cell_top,eb_px,tag_px,lab_px,mail_px):
     sw,sh=W*SS,H*SS
     g=Image.new("RGB",(1,sh))
     for y in range(sh):
@@ -35,9 +40,7 @@ def build(W,H,*,name_px,cell,gap,pad,x0,y_base,y_cell_top,eyebrow_px,tag_px,lab_
     cs=S(cell); gp=S(gap); total=cs*3+gp*2
     xs=sw-S(pad)-total; ytop=S(y_cell_top); yb=S(y_base)
 
-    # one hairline spanning the full width: baseline for BOTH halves
     d.line([(S(x0),yb),(sw-S(pad),yb)],fill=RULE,width=hair)
-
     for i,(fn,lab) in enumerate(SPECS):
         cx=xs+i*(cs+gp); m=mask(parse(fn),cs)
         img.paste(Image.new("RGB",(cs,cs),SAGE),(cx,ytop),m)
@@ -47,21 +50,26 @@ def build(W,H,*,name_px,cell,gap,pad,x0,y_base,y_cell_top,eyebrow_px,tag_px,lab_
     small=ImageFont.truetype(MENLO,S(lab_px),index=0)
     for i,(fn,lab) in enumerate(SPECS):
         cx=xs+i*(cs+gp); txt=f"P {lab}"
-        w=twid(d,txt,small,S(1.2))
-        track(d,(cx+cs//2-w/2,yb+S(14)),txt,small,SAGE,S(1.2))
+        w=twid(d,txt,small,S(1.2)); track(d,(cx+cs//2-w/2,yb+S(14)),txt,small,SAGE,S(1.2))
 
-    eb=ImageFont.truetype(MENLO ,S(eyebrow_px),index=0)
-    nm=ImageFont.truetype(FUTURA,S(name_px),index=0)
-    tg=ImageFont.truetype(AVENIR,S(tag_px),index=7)
-    y_tag=y_base-tag_px-14
-    y_nm =y_tag-name_px-16
-    y_eb =y_nm-eyebrow_px-20
-    track(d,(S(x0),S(y_eb)),"TPMS · GYROID · VOXEL FEM",eb,SAGE,S(2.4))
-    track(d,(S(x0),S(y_nm)),"HARIGOVIND R",nm,BONE,S(4.2))
-    d.text((S(x0),S(y_tag)),"Physics-informed ML for bone tissue engineering",font=tg,fill=MUTED)
+    eb  =ImageFont.truetype(MENLO ,S(eb_px),  index=0)
+    nm  =ImageFont.truetype(FUTURA,S(name_px),index=0)
+    tg  =ImageFont.truetype(AVENIR,S(tag_px), index=7)
+    mail=ImageFont.truetype(MENLO ,S(mail_px),index=0)
+
+    # stack upward from the rule so nothing crosses y=290 (LinkedIn avatar zone)
+    y_mail = y_base - mail_px - 21
+    y_tag  = y_mail - tag_px  - 16
+    y_nm   = y_tag  - name_px - 18
+    y_eb   = y_nm   - eb_px   - 20
+    track(d,(S(x0),S(y_eb)),EYEBROW,eb,SAGE,S(2.4))
+    track(d,(S(x0),S(y_nm)),NAME,nm,BONE,S(4.2))
+    d.text((S(x0),S(y_tag)),TAGLINE,font=tg,fill=MUTED)
+    track(d,(S(x0),S(y_mail)),EMAIL,mail,SAGE,S(0.6))
+    print(f"  type block y: eyebrow {y_eb} name {y_nm} tag {y_tag} mail {y_mail}-{y_mail+mail_px} | rule {y_base}")
     return img.resize((W,H),Image.LANCZOS)
 
-build(1584,396,name_px=62,cell=196,gap=32,pad=88,x0=96,
-      y_base=300,y_cell_top=72,eyebrow_px=14,tag_px=22,lab_px=13
+build(1584,396,name_px=60,cell=196,gap=32,pad=88,x0=96,
+      y_base=300,y_cell_top=72,eb_px=14,tag_px=21,lab_px=13,mail_px=15
      ).save("linkedin-cover.png")
 print("ok")
