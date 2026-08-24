@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Harigovind R
+![Harigovind R — physics-informed ML for bone tissue engineering](assets/banner.png)
 
 🎓 Final-year B.Tech in AI & ML — Chinmaya Vishwa Vidyapeeth  
 🔬 I like problems where the model has to survive contact with real data  
