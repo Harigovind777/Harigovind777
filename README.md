@@ -61,6 +61,7 @@ should never be able to buy off a fatal geometry.
 
 <div align="center">
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/hari-govind-436230294/)
 [![Email](https://img.shields.io/badge/Email-1e1e1e?style=for-the-badge&logo=gmail&logoColor=D14836)](mailto:hg155158@gmail.com)
 
 </div>
