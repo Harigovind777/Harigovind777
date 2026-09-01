@@ -1,24 +1,30 @@
-![Harigovind R — physics-informed ML for bone tissue engineering](assets/banner.png)
+![Harigovind R — physics-informed ML for bone tissue engineering](assets/banner.jpg)
 
 <p align="center">
-  Final-year B.Tech in AI &amp; ML at Chinmaya Vishwa Vidyapeeth.<br>
+  <b>Final-year B.Tech in AI &amp; ML</b> · Chinmaya Vishwa Vidyapeeth<br>
   I like problems where the model has to survive contact with real data —<br>
   right now that means physics-informed ML for bone tissue engineering.
 </p>
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
-
-</div>
-
 <p align="center">
-  <sub>Finite element methods · Gaussian processes · multi-fidelity fusion · leakage-aware validation</sub>
+  <sub>◆ &nbsp;currently: voxel FEM sweeps, co-kriging, and trying hard to prove my own model wrong&nbsp; ◆</sub>
 </p>
 
 ---
 
-## 🔬 Featured — Bone Scaffold Property Prediction & Inverse Design
+## 技 &nbsp;·&nbsp; The stack
+
+<div align="center">
+  <img src="assets/stamps.png" width="830" alt="Skill stamps: Python, NumPy, pandas, scikit-learn, SciPy, Matplotlib, TypeScript, JavaScript, Node.js, Express, Flutter, Dart">
+</div>
+
+<p align="center">
+  <sub>also — finite element methods · Gaussian processes · multi-fidelity fusion · leakage-aware validation · Git · HTML/CSS</sub>
+</p>
+
+---
+
+## 研究 &nbsp;·&nbsp; Featured — Bone Scaffold Property Prediction & Inverse Design
 
 Predicting the mechanical and degradation behaviour of biopolymer bone scaffolds from
 composition, process and architecture — then running that model **backwards** to propose a
@@ -48,7 +54,7 @@ should never be able to buy off a fatal geometry.
 
 ---
 
-## 📌 Other Projects
+## 作品 &nbsp;·&nbsp; Other projects
 
 | Project | What it is | Stack |
 |---|---|---|
@@ -59,9 +65,13 @@ should never be able to buy off a fatal geometry.
 
 ---
 
+## 連絡 &nbsp;·&nbsp; Reach me
+
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/hari-govind-436230294/)
-[![Email](https://img.shields.io/badge/Email-1e1e1e?style=for-the-badge&logo=gmail&logoColor=D14836)](mailto:hg155158@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-govind-436230294/)
+[![Email](https://img.shields.io/badge/Email-C42E26?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hmk94302@gmail.com)
+
+<sub>Open to research collaborations and internships in ML for materials, biomechanics, or scientific computing.</sub>
 
 </div>
