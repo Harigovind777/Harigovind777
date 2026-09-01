@@ -7,7 +7,8 @@
 </p>
 
 <p align="center">
-  <sub>◆ &nbsp;currently: voxel FEM sweeps, co-kriging, and trying hard to prove my own model wrong&nbsp; ◆</sub>
+  <sub>◆ &nbsp;currently: voxel FEM sweeps, co-kriging, and trying hard to prove my own model wrong&nbsp; ◆</sub><br>
+  <a href="https://harigovind777.github.io"><b>harigovind777.github.io</b></a>
 </p>
 
 ---
@@ -69,6 +70,7 @@ should never be able to buy off a fatal geometry.
 
 <div align="center">
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-1c1140?style=for-the-badge&logo=github&logoColor=F5B96A)](https://harigovind777.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-govind-436230294/)
 [![Email](https://img.shields.io/badge/Email-C42E26?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hmk94302@gmail.com)
 
