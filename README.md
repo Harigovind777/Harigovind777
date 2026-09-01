@@ -1,7 +1,8 @@
 ![Harigovind R — physics-informed ML for bone tissue engineering](assets/banner.jpg)
 
 <p align="center">
-  <b>Final-year B.Tech in AI &amp; ML</b> · Chinmaya Vishwa Vidyapeeth<br>
+  <b>B.Tech in AI &amp; ML, class of 2027</b> · Chinmaya Vishwa Vidyapeeth<br>
+  Trivandrum, Kerala<br>
   I like problems where the model has to survive contact with real data —<br>
   right now that means physics-informed ML for bone tissue engineering.
 </p>

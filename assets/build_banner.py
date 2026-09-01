@@ -34,7 +34,7 @@ MUTED = (206, 178, 186)
 HORIZON = 0.82
 SUN = (0.615, 0.556, 120)  # cx, cy (fractions), radius in final px
 
-EYEBROW = "FINAL-YEAR B.TECH  ·  AI & ML  ·  CHINMAYA VISHWA VIDYAPEETH"
+EYEBROW = "B.TECH AI & ML  ’27  ·  CHINMAYA VISHWA VIDYAPEETH  ·  TRIVANDRUM"
 NAME = "HARIGOVIND R"
 TAGLINE = "Physics-informed ML for bone tissue engineering"
 SUB = "voxel FEM  ·  co-kriging  ·  leakage-honest validation"
@@ -278,5 +278,7 @@ gi = Image.fromarray(np.clip(g + 128, 0, 255).astype(np.uint8), "RGB").resize(
 img = Image.blend(img.convert("RGB"), Image.blend(img.convert("RGB"), gi, 1.0), 0.045)
 
 out = img.resize((W, H), Image.LANCZOS)
-out.save("banner.png", optimize=True)
-print(f"banner.png  {W}x{H}")
+# JPEG rather than PNG: palette-quantising a full-bleed sky gradient dithers it
+# visibly, and lossless PNG costs ~410KB against ~169KB here at q94.
+out.save("banner.jpg", quality=94, subsampling=0, optimize=True, progressive=True)
+print(f"banner.jpg  {W}x{H}")
