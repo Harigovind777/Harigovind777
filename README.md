@@ -17,8 +17,12 @@
 ## 技 &nbsp;·&nbsp; The stack
 
 <div align="center">
-  <img src="assets/stamps.png" width="830" alt="Skill stamps: Python, NumPy, pandas, scikit-learn, SciPy, Matplotlib, TypeScript, JavaScript, Node.js, Express, Flutter, Dart">
+  <img src="assets/skills.svg" width="840" alt="Skill constellation: 15 skills, each linked to the projects and internships that use it. JavaScript, HTML/CSS and Python are the most connected.">
 </div>
+
+<p align="center">
+  <sub>Not a badge wall — a graph. Every skill is one link from the work that proves it.</sub>
+</p>
 
 <p align="center">
   <sub>also — finite element methods · Gaussian processes · multi-fidelity fusion · leakage-aware validation · Git · HTML/CSS</sub>
