@@ -64,10 +64,12 @@ should never be able to buy off a fatal geometry.
 
 | Project | What it is | Stack |
 |---|---|---|
+| [**WildID**](https://github.com/Sym-jay/WildID) | Flutter app identifying 66 CITES-protected marine species — three-model PyTorch ensemble, offline fallback. Team project with the Zoological Survey of India | Flutter, PyTorch, Flask |
 | [**Agent-Api-Task**](https://github.com/Harigovind777/Agent-Api-Task) | Express task API with agent-ready endpoints, filtering, stats, comments and validation | JavaScript, Express |
+| **AI Resume Analyzer** | Browser-based resume analyzer returning structured job-match feedback rather than a keyword count | JavaScript, HTML, CSS |
 | [**medlab-site**](https://github.com/Harigovind777/medlab-site) | Distributor website for Medlab Enterprises (AOSYS) | HTML, CSS |
 | **zsi_app** 🔒 | Flutter app for the Zoological Survey of India — data collection for the zoology department | Dart, Flutter |
-| **Website** 🔒 | Voter lookup for a panchayath — resident and booth-level counts | TypeScript |
+| **Website** 🔒 | Voter lookup for Pallichal Panchayat — resident and booth-level counts | TypeScript |
 
 ---
 
